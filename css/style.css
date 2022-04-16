@@ -135,6 +135,12 @@ Navigation section */
   transition: all 0.3s;
 }
 
+.main-nav-link.nav-cta:hover,
+.main-nav-link:active {
+  background-color: #cf711f;
+  color: white;
+}
+
 /* ******************
 Hero Section */
 
