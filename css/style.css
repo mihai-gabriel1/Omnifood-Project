@@ -45,12 +45,16 @@ General reusable components */
 
 .grid {
   display: grid;
-  gap: 9.6rem;
-  /* grid-template-columns: 1fr 1fr 1fr; */
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
 }
 
 .grid--2--cols {
   grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--center-v {
+  align-items: center;
 }
 
 /*
@@ -90,6 +94,12 @@ General reusable components */
   font-size: 4.4rem;
   line-height: 1.2;
   margin-bottom: 9.6rem;
+}
+
+.heading-tertiary {
+  font-size: 3.4rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
 }
 
 .subheading {
@@ -269,6 +279,54 @@ How it works section */
   padding: 9.6rem 0;
 }
 
+.step-number {
+  font-size: 9.8rem;
+  font-weight: 600;
+  color: #ddd;
+}
+
+.step-description {
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+
+.step-image-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
 .step-img {
+  width: 35%;
+}
+
+.step-image-box::before {
+  content: "";
+  display: block;
+  width: 60%;
+  /* height: 60%; */
+  padding-bottom: 60%;
+  background-color: #fdf2e9;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: -2;
+}
+
+.step-image-box::after {
+  content: "";
+  display: block;
   width: 50%;
+  /* height: 60%; */
+  padding-bottom: 50%;
+  background-color: #fae5e0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: -1;
 }
