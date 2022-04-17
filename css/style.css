@@ -53,6 +53,11 @@ General reusable components */
   grid-template-columns: repeat(2, 1fr);
 }
 
+.grid--3--cols {
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0rem 9rem;
+}
+
 .grid--center-v {
   align-items: center;
 }
@@ -329,4 +334,47 @@ How it works section */
   transform: translate(-50%, -50%);
   border-radius: 50%;
   z-index: -1;
+}
+
+/* ***************
+Features section
+*************** */
+.section-featured {
+  padding: 4.8rem 0 3.2rem 0;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-around;
+}
+
+.heading-featured-in {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  font-weight: 500;
+  color: #aaaaaa;
+  text-align: center;
+  margin-bottom: 2.4rem;
+}
+
+.logos img {
+  height: 3.2rem;
+  opacity: 50%;
+  filter: brightness(0);
+}
+
+.center-text {
+  text-align: center;
+}
+
+.meal {
+  box-shadow: 0 2.4rem 4.8rem rgb(0 0 0 / 8%);
+  border-radius: 11px;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+
+.meal-img {
+  width: 100%;
 }
