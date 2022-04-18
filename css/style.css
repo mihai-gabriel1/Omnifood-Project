@@ -131,7 +131,7 @@ General reusable components */
 
   /* Using transition effect on buttons when hovered uppon. */
 
-  transition: background-color 0.5s;
+  transition: all 0.4s;
 }
 
 .btn--full:link,
@@ -380,6 +380,12 @@ Meal Section
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 8%);
   border-radius: 13px;
   overflow: hidden;
+  transition: all 0.4s;
+}
+
+.meal:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 4%);
 }
 
 .meal-content {
@@ -439,4 +445,65 @@ Meal Section
   height: 2.4rem;
   width: 2.4rem;
   color: #e67e62;
+}
+
+.list {
+  list-style: none;
+}
+
+.list-icon {
+  color: #e67e62;
+  width: 3rem;
+  height: 3rem;
+}
+
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.all-recipes {
+  text-align: center;
+  font-size: 2.4rem;
+}
+
+.link:link,
+.link:visited {
+  text-decoration: none;
+  color: #e67e62;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 0.2rem;
+  display: inline-block;
+
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  color: #cf711f;
+  border-bottom: 1px solid transparent;
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem;
+}
+
+.center--text {
+  text-align: center;
+}
+
+/* *******
+Testimonials Section
+******* */
+
+.section-testimonials {
+  padding: 9.6rem 0;
 }
