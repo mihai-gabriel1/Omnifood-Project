@@ -191,7 +191,7 @@ Navigation section */
 .main-nav-list {
   list-style: none;
   display: flex;
-  gap: 3.2rem;
+  gap: 4.8rem;
   align-items: center;
 }
 
@@ -537,7 +537,7 @@ Testimonials Section
 }
 
 .testimonials-container {
-  padding: 9.6rem;
+  padding: 9.4rem;
 }
 
 .testimonials img {
