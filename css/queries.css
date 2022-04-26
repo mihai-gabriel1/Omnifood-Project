@@ -20,6 +20,9 @@ Landscape tablets
 ******** */
 
 @media (max-width: 75em) {
+  /* Set in percentages, because the desired value, 
+    9px / 16 = 0.5625, therfore 
+    our desired value is 56.25% */
   html {
     font-size: 56.25%;
   }
@@ -51,5 +54,65 @@ Landscape tablets
 
   .testimonials-container {
     padding: 9.6rem 3.2rem;
+  }
+}
+/* ****************
+Bellow 944 px, tablets responsive design
+************** */
+
+@media (max-width: 59em) {
+  /* Set in percentages, because the desired value, 
+    8px / 16 = 0.5, therfore 
+    /* our desired value is 50.00% */
+  html {
+    font-size: 50%;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+    gap: 6.4rem;
+  }
+
+  .hero-img {
+    width: 60%;
+  }
+
+  .hero-image-box,
+  .hero-text-box {
+    text-align: center;
+  }
+
+  .delivered-meals {
+    justify-content: center;
+    margin-top: 3.2rem;
+    padding-bottom: 1rem;
+  }
+
+  .logos img {
+    height: 2.4rem;
+  }
+
+  .step-number {
+    font-size: 7.2rem;
+  }
+  .section-testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .cta {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+
+  .btn--form {
+    margin-top: 1.2rem;
   }
 }
