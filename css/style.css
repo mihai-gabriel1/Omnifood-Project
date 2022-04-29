@@ -21,6 +21,8 @@ Shadows:
 html {
   font-size: 62.5%;
   overflow-x: hidden;
+  /* scroll-behavior: smooth;  
+  Does not work on safari or microsoft edge*/
 }
 
 * {
@@ -34,7 +36,6 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
-  overflow-x: hidden;
 }
 
 /* Mobile */
